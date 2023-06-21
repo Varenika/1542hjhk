@@ -1,0 +1,169 @@
+/*Fonts*/
+@import url(../css/clash-display.css);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+/*Variables*/
+:root{
+  --c-dark: #212529;
+  --c-brand: #4e57d4;
+  --c-brand-light: #6970dd;
+  --c-brand-rgb: 78, 87, 212;
+  --c-body: #727272;
+  --font-base: "Ubuntu",sans-serif;
+  --box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.08);
+  --transition: all .5s ease;
+}
+
+/*Base*/
+body{
+  font-family: var(--font-base);
+  line-height: 1.7;
+  color: var(--c-body);
+}
+
+h1 , h2, h3, h4, h5, h6,
+ .h1 , .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+a{
+  text-decoration: none;
+  color: var(--c-brand);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-brand-light);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.section-padding{
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+
+.font-w{
+  font-weight: 500;
+}
+
+.VH{
+  min-height: 100vh;
+  display: flex;
+}
+/*Navbar*/
+
+.navbar{
+  box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link{
+  font-weight: 500;
+  color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active{
+  color: var(--c-brand);
+}
+
+/*BTN*/
+.btn{
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-brand{
+  background-color: var(--c-brand);
+  border-color: var(--c-brand);
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: var(--c-brand-light);
+  border-color: var(--c-brand-light);
+  color: white;
+}
+
+/*Fullscreen*/
+.Relative{
+ 
+  max-height: 80vh;
+  width: 100%;
+  
+}
+
+.zz-100{
+  z-index: 100;
+}
+
+.video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.video-media{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.shadow-video{
+  content: "";
+  z-index: 5;
+  background:linear-gradient( rgba( var(--c-brand-rgb),0.507 ),rgba(var(--c-brand-rgb),0.43));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*Section Title*/
+.section-title{
+  margin-bottom: 40px;
+}
+
+.section-title .line{
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*IconBox*/
+.iconbox{
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(150, 156, 238, 0.187);
+  color: var(--c-brand);
+  font-size: 44px;
+  flex: none;
+}
+
