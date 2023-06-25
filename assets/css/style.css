@@ -233,7 +233,7 @@ transition: var(--transition);
 
 /*portfolio*/
 .portfolio-item .iconbox{
-  background-color: var(--c-brand);
+background-color: var(--c-brand);
 color: white;
 position: absolute;
 top: 45%;
