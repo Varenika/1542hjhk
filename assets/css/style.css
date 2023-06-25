@@ -11,7 +11,7 @@
   --font-base: "Ubuntu",sans-serif;
   --box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.2);
   --transition: all .7s ease;
-  
+
 }
 
 /*Base*/
@@ -61,7 +61,7 @@ img{
   box-shadow: var(--box-shadow);
 }
 
-/*Zoom*/
+/*Zoom img*/
 .image-zoom{
   position: relative;
   overflow: hidden;
@@ -223,17 +223,30 @@ transition: var(--transition);
   background-color: rgba(255, 255, 255, 0.336);
   color: white;
 }
+/*counter*/
+
 #counter{
   background: linear-gradient(rgba(var(--c-brand-rgb),.8), rgba(var(--c-brand-rgb),.4)) , url(../images/counter.jpg);
   background-size: cover;
   background-position: center;
 }
 
+/*portfolio*/
+.portfolio-item .iconbox{
+  background-color: var(--c-brand);
+color: white;
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50% ,-50%);
+opacity: 0;
+}
 
 
-
-
-
+.portfolio-item:hover .iconbox{
+opacity: 1;
+top: 50%;
+}
 
 
 
