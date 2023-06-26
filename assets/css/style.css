@@ -67,12 +67,13 @@ img{
 
 /*Zoom img*/
 .image-zoom
-.card-body{
+.card{
   position: relative;
   overflow: hidden;
 }
 
-.image-zoom-wraper{
+.image-zoom-wraper,
+.card-body{
   overflow: hidden;
   position: relative;
 }
@@ -81,7 +82,7 @@ img{
 transition: var(--transition);
 }
 .image-zoom:hover .image-zoom-wraper img,
-.card-body:hover img{
+.card:hover img{
   transform: scale(1.1);
 }
 
