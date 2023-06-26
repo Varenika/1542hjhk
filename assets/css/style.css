@@ -237,6 +237,12 @@ transition: var(--transition);
   background-size: cover;
   background-position: center;
 }
+#team{
+  background: linear-gradient(rgba(var(--c-brand-rgb),.8), rgba(var(--c-brand-rgb),.4)) , url(../images/hero-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 
 /*portfolio*/
 .portfolio-item .iconbox{
