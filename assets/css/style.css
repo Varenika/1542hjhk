@@ -61,6 +61,10 @@ img{
   box-shadow: var(--box-shadow);
 }
 
+.color-b{
+ background-color: rgba(var(--c-brand-rgb),.4);
+}
+
 /*Zoom img*/
 .image-zoom{
   position: relative;
